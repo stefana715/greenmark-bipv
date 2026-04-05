@@ -1,0 +1,9 @@
+GBRS,Country,D1_Credit_Weight,D2_BIPV_Specificity,D3_Application_Coverage,D4_Design_Integration,D5_Ambition_Level,D6_Performance_Verification,D7_Synergy_Envelope,D8_Innovation_Pathway,Total_Score,Percentage
+LEED,USA,1,1,1,1,1,1,0,2,8,33.3
+BREEAM,UK,2,1,1,3,3,1,1,2,14,58.3
+Green Mark,Singapore,3,2,2,3,2,3,1,2,18,75.0
+Green Star,Australia,2,1,1,1,3,1,1,3,13,54.2
+ASGB,China,1,1,1,0,1,2,0,1,7,29.2
+BEAM Plus,Hong Kong,1,1,1,2,0,1,0,1,7,29.2
+CASBEE,Japan,1,1,1,0,1,1,0,0,5,20.8
+DGNB,Germany,2,2,2,2,2,2,3,2,17,70.8

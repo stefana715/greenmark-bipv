@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.eggs/
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Data (raw exports may be large)
+# Keep processed + scoring matrix; ignore large raw files
+data/raw/*.bib
+
+# Outputs are generated; keep them tracked for review
+# outputs/figures/*.png  # uncomment if you don't want to track PNGs
+
+# Temp
+*.tmp
+*.log
+*.tar
+*.tar.gz

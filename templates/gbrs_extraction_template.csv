@@ -1,0 +1,8 @@
+GBRS,Version,Category,Credit_ID,Credit_Name,Max_Points,PV_Relevant,BIPV_Mentioned,Requirement_Type,Specific_Text,BIPV_Application_Types,Notes
+LEED,v4.1 BD+C,Energy & Atmosphere,EAc2,Optimize Energy Performance,18,Yes_Indirect,No,Performance,Whole-building energy simulation; PV reduces modeled energy use,Roof,PV output reduces denominator in energy model
+LEED,v4.1 BD+C,Energy & Atmosphere,EAc5,Renewable Energy,5,Yes_Direct,No,Performance,1-3 pts for 1-10% on-site renewable; 2 pts for green power,Roof,No distinction between BIPV and BAPV
+LEED,v4.1 BD+C,Integrative Process,IPc1,Integrative Process,1,Yes_Indirect,No,Process,Early design analysis of energy-related systems,Any,Encourages but does not require solar analysis
+BREEAM,NC 2018,Energy,Ene01,Reduction of energy use and carbon emissions,15,Yes_Indirect,No,Performance,Net-zero carbon for maximum credits via whole-building modeling,Roof,PV helps achieve carbon reduction targets
+BREEAM,NC 2018,Energy,Ene04,Low carbon design,2,Yes_Direct,No,Hybrid,LZC feasibility study (1 credit mandatory); adopt at least one LZC technology (1 credit),Any,Feasibility study must consider PV among options
+Green Mark,GM:2021,Energy Efficiency,Section 3,Renewable Energy,20,Yes_Direct,Partial,Prescriptive,Points based on installed PV capacity (kWp) or % annual energy from renewables,Roof/Facade,Strongest direct PV incentive of any system; guidance mentions facade BIPV
+,,,,,,,,,,,FILL IN AS YOU READ EACH MANUAL
