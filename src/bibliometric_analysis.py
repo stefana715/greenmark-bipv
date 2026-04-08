@@ -141,8 +141,27 @@ def top_journals(df, n=10):
 def top_countries(df, n=12):
     """Top contributing countries."""
     if "Affiliations" in df.columns:
-        # Simple extraction: take first affiliation country
-        countries = df["Affiliations"].dropna().str.split(";").str[0].str.strip()
+        # Each affiliation entry ends with the country (last comma-separated token)
+        def extract_countries(aff_str):
+            if pd.isna(aff_str):
+                return []
+            result = []
+            for entry in aff_str.split(";"):
+                entry = entry.strip()
+                if entry:
+                    country = entry.split(",")[-1].strip()
+                    if country:
+                        result.append(country)
+            return result
+
+        all_countries = []
+        for aff in df["Affiliations"]:
+            all_countries.extend(extract_countries(aff))
+        # Count unique countries per paper (use first affiliation per paper for paper-level count)
+        paper_countries = df["Affiliations"].dropna().apply(
+            lambda x: extract_countries(x)[0] if extract_countries(x) else "Unknown"
+        )
+        countries = paper_countries
     else:
         countries = pd.Series(["Unknown"] * len(df))
 
