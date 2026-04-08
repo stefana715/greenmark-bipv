@@ -1,0 +1,23 @@
+Dimension,Mean Score,Std Dev,% Not Mentioned (=0),% Dedicated (=3),Max System
+A: Roof PV,1.95,0.67,4.8,14.3,Green Mark
+B: Façade PV,1.29,0.85,9.5,14.3,BEAM Plus
+"C: Window/
+Curtain Wall PV",0.52,0.68,57.1,0.0,DGNB
+"D: Shading
+Device PV",0.81,0.75,38.1,0.0,DGNB
+"E: Glass-
+Integrated PV",0.43,0.68,66.7,0.0,DGNB
+"F: Thermal
+Envelope",2.05,0.67,4.8,19.0,DGNB
+"G: Daylighting
+& Visual",1.81,0.51,0.0,4.8,WELL
+"H: Materials
+& LCA",1.43,0.87,9.5,14.3,BREEAM
+"I: Carbon
+Accounting",1.71,0.96,4.8,28.6,BREEAM
+"J: EV/Storage
+Synergy",0.76,0.7,38.1,0.0,DGNB
+"K: Design
+Integration",1.1,1.18,42.9,19.0,BREEAM
+"L: Innovation
+Pathway",1.24,0.89,19.0,9.5,Green Star

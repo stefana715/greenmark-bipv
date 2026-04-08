@@ -13,9 +13,8 @@ PROCESSED_DIR = os.path.join(DATA_DIR, "processed")
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "outputs")
 FIG_DIR = os.path.join(OUTPUT_DIR, "figures")
 TABLE_DIR = os.path.join(OUTPUT_DIR, "tables")
-DOCS_DIR  = os.path.join(PROJECT_ROOT, "docs")
 
-for d in [RAW_DIR, PROCESSED_DIR, FIG_DIR, TABLE_DIR, DOCS_DIR]:
+for d in [RAW_DIR, PROCESSED_DIR, FIG_DIR, TABLE_DIR]:
     os.makedirs(d, exist_ok=True)
 
 # ── Scoring rubric ─────────────────────────────────────

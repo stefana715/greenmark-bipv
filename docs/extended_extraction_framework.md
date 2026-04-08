@@ -1,153 +1,145 @@
-# Extended Extraction Framework: Indirect PV/BIPV References in GBRS
-
-## Purpose
-
-First-pass manual review (Round 1) focused on Energy/Renewable Energy chapters only.
-This second-pass framework targets **indirect** PV/BIPV relevance — criteria that create
-enabling conditions or hidden barriers for BIPV integration without explicitly mentioning
-renewable energy.
-
-These findings are primary material for **Section 7 Discussion** of the paper, specifically:
-- 7.1 Synthesis: "No system adequately recognizes façade BIPV as a building material"
-- 7.2 Barriers: technical uncertainty, regulatory gap, knowledge gap
-- 7.3 Recommendations for GBRS developers
+# Extended PV/BIPV Criteria Extraction Framework
+## Beyond "renewable energy credits" — all building performance dimensions touched by BIPV
 
 ---
 
-## Dimension 1 — Envelope + PV
+## Dimension A: Direct PV/Renewable Energy Generation
+**Already extracted in current analysis**
+- On-site renewable energy credits/points
+- % energy from renewables thresholds
+- kWp prescriptive requirements
+- Net-zero / net-positive pathways
+- Solar feasibility study requirements
 
-**Hypothesis:** Some systems assess building envelope performance (U-value, SHGC, ETTV)
-in ways that either conflict with or could synergize with BIPV facade integration.
+## Dimension B: Building Envelope & Thermal Performance
+**Why relevant:** BIPV façade and window products ARE envelope components — their thermal properties (U-value, SHGC) directly affect heating/cooling loads.
 
-**Search terms (co-occurrence within ~3 paragraphs):**
-- Primary: `envelope`, `façade`, `curtain wall`, `U-value`, `SHGC`, `ETTV`
-- Co-occurring: `PV`, `solar`, `photovoltaic`, `BIPV`, `integrated`
+**What to extract from each GBRS:**
+- Does the envelope/thermal performance credit allow BIPV products?
+- Can BIPV glazing (semi-transparent PV) count toward window/curtain wall thermal requirements?
+- Is there guidance on how to model BIPV thermal properties (e.g., SHGC of PV glass)?
+- Does the system recognize BIPV's dual function (thermal + generation)?
+
+**Look for credits like:**
+- LEED: EAp2 Minimum Energy (envelope prescriptive), EQ Daylight
+- BREEAM: Ene01 (energy modeling includes envelope), Mat01 (lifecycle)
+- Green Mark: Building Envelope Thermal Transfer Value (ETTV/RETV)
+- DGNB: TEC1.3 Building Envelope Quality
+- Passive House: Envelope U-values, thermal bridge assessment
+
+## Dimension C: Daylighting, Visual Comfort & Glare
+**Why relevant:** Semi-transparent BIPV and BIPV shading devices directly affect indoor light quality.
 
 **What to extract:**
-- Does the envelope credit penalise BIPV facades (e.g. opaque BIPV counted as wall, not window)?
-- Is BIPV facade explicitly excluded or included from SHGC/U-value calculations?
-- Does the system allow BIPV to satisfy both envelope AND energy criteria simultaneously?
-- Any mention of "building-integrated" materials in envelope context
+- Do daylighting credits consider BIPV glazing's Visible Light Transmittance (VLT)?
+- Can BIPV shading (louvers, overhangs) earn daylighting/glare control credits?
+- Is there conflict: BIPV reduces VLT below daylighting thresholds?
+- Any guidance on balancing PV generation vs. daylight performance?
 
----
+**Look for credits like:**
+- LEED: EQ Daylight (spatial daylight autonomy, annual sunlight exposure)
+- BREEAM: Hea01 Visual Comfort (daylight factor, view out)
+- Green Mark: Health & Wellbeing section (indoor environmental quality)
+- WELL: Light concept (but WELL has no PV — interesting contrast)
 
-## Dimension 2 — Daylighting / Visual Comfort + Solar
-
-**Hypothesis:** Daylighting credits and shading requirements can conflict with PV (opaque
-panels block daylight) or enable BIPV (semi-transparent PV satisfies both shading and
-daylighting simultaneously).
-
-**Search terms:**
-- Primary: `daylight`, `visual comfort`, `VLT`, `glare`, `shading device`, `solar control`
-- Co-occurring: `PV`, `solar`, `photovoltaic`, `louver`, `louvre`, `semi-transparent`
+## Dimension D: Materials, Embodied Carbon & LCA
+**Why relevant:** BIPV modules have significant embodied energy/carbon. Systems with LCA requirements may penalize or reward PV depending on accounting method.
 
 **What to extract:**
-- Do daylighting credits explicitly allow PV shading devices as a compliant solution?
-- Is semi-transparent PV recognized as a daylighting tool?
-- Do shading requirements conflict with or enable BIPV integration?
-- Any daylight-PV trade-off language
+- Does the LCA credit include PV module embodied carbon?
+- Does the system account for PV's operational carbon savings vs. embodied carbon?
+- Can BIPV products earn EPD (Environmental Product Declaration) credits?
+- Is there lifecycle cost analysis (LCCA) credit that includes PV payback?
 
----
+**Look for credits like:**
+- BREEAM: Mat01 (whole building LCA)
+- DGNB: ENV1.1 Life Cycle Assessment (explicitly includes PV)
+- LEED: MR Building Product Disclosure (EPD credits)
+- Green Star: Materials category (lifecycle assessment)
+- HQE: RE2020 lifecycle carbon approach
 
-## Dimension 3 — Materials / LCA + PV
-
-**Hypothesis:** LCA and materials credits could either recognize or ignore the lifecycle
-benefits and burdens of PV as a building material component. DGNB is expected to lead here.
-
-**Search terms:**
-- Primary: `life cycle`, `LCA`, `embodied carbon`, `EPD`, `material`, `product declaration`
-- Co-occurring: `PV`, `solar`, `photovoltaic`, `panel`, `module`, `BIPV`
-
-**What to extract:**
-- Is PV assessed as a building product with an EPD requirement?
-- Does the LCA boundary include or exclude on-site PV generation?
-- Is BIPV treated as a construction material (with associated embodied carbon)?
-- Any interaction between Materials credits and Energy credits for PV
-
----
-
-## Dimension 4 — EV / Storage + PV
-
-**Hypothesis:** EV charging and battery storage credits are increasingly linked to on-site
-renewable generation, creating indirect PV demand.
-
-**Search terms:**
-- Primary: `electric vehicle`, `EV charging`, `battery`, `storage`, `smart grid`, `demand response`
-- Co-occurring: `PV`, `solar`, `renewable`, `on-site generation`, `grid`
+## Dimension E: Roofing, Weatherproofing & Durability
+**Why relevant:** BIPV roof tiles/shingles replace conventional roofing — they must meet weather protection standards.
 
 **What to extract:**
-- Do EV credits explicitly require or prefer on-site solar to power charging?
-- Is battery storage linked to PV generation in credit requirements?
-- Any "solar-ready" or "renewable-ready" infrastructure language
+- Do roofing/envelope durability credits recognize BIPV products?
+- Is there a maintenance/replacement cycle credit that considers PV lifespan (25+ years)?
+- Does the system reference BIPV product standards (IEC 63092)?
 
----
+**Look for credits like:**
+- DGNB: TEC1.6 Ease of maintenance and cleaning
+- Green Mark: Maintainability section
+- BREEAM: Mat03 Responsible sourcing
 
-## Dimension 5 — Carbon + PV
-
-**Hypothesis:** Carbon neutrality and net-zero carbon pathways implicitly require PV at
-scale, even when PV is not mentioned explicitly.
-
-**Search terms:**
-- Primary: `net zero carbon`, `carbon neutral`, `operational carbon`, `carbon offset`,
-  `greenhouse gas`, `Scope 1`, `Scope 2`, `carbon intensity`
-- Co-occurring: `PV`, `solar`, `renewable`, `on-site generation`
+## Dimension F: EV Charging & Energy Storage Synergy
+**Why relevant:** PV + battery + EV charging is increasingly common; some GBRS reward this integration.
 
 **What to extract:**
-- Does the carbon credit pathway implicitly require PV to achieve target?
-- Is grid decarbonisation assumed (reducing PV's relative credit value over time)?
-- Are avoided emissions from on-site PV generation counted in the carbon balance?
-- Net-zero pathway language that implies PV integration
+- Is there an EV charging credit? Does it reference on-site PV?
+- Is there a battery/energy storage credit?
+- Does the system reward PV + storage as a package?
+- Grid harmonization / demand response credits linked to PV?
 
----
+**Look for credits like:**
+- LEED: LT Electric Vehicles, EA Grid Harmonization (new in v4.1)
+- BREEAM: Tra02 Proximity to amenities (EV charging)
+- Green Mark: Intelligence section (smart energy management)
+- DGNB: TEC1.5 Smart building technology
 
-## Dimension 6 — Site / Urban + Solar
-
-**Hypothesis:** Site assessment, orientation, massing, and solar access credits shape
-early design decisions that determine BIPV feasibility — but are rarely connected to PV
-explicitly.
-
-**Search terms:**
-- Primary: `orientation`, `massing`, `solar potential`, `site assessment`, `solar access`,
-  `passive solar`, `solar rights`, `overshadowing`, `sky view factor`
-- (No co-occurring PV term required — solar access IS the PV prerequisite)
+## Dimension G: Carbon Accounting & Net-Zero Pathway
+**Why relevant:** PV is essential for achieving net-zero carbon in most GBRS — but how is it counted?
 
 **What to extract:**
-- Do site/orientation credits explicitly state they enable future PV?
-- Is solar access protection mentioned (protecting neighbour's PV potential)?
-- Any solar envelope or solar rights language
-- "Solar-ready design" or "PV-ready" infrastructure mentions
+- How does PV generation factor into the carbon/energy modeling?
+- Is PV counted as reducing operational carbon, or as a separate offset?
+- Can PV help achieve "net-zero carbon" vs "net-zero energy"?
+- Is exported PV surplus credited or ignored?
+
+**Look for credits like:**
+- BREEAM: Ene01 (net-zero carbon framework)
+- Green Star: Carbon neutral certification pathway
+- LBC: Energy Petal (105% net-positive, must be measured)
+- MINERGIE: Energy balance calculation methodology
+
+## Dimension H: Urban Context & Shading Analysis
+**Why relevant:** BIPV potential depends on urban morphology (building height, density, orientation). Some GBRS encourage site-level solar analysis.
+
+**What to extract:**
+- Does the system require/encourage site-level solar potential analysis?
+- Is there credit for optimizing building orientation for solar?
+- Does the system address inter-building shading effects on PV?
+- Any reference to urban-scale PV/BIPV potential?
+
+**Look for credits like:**
+- LEED: SS Site Assessment (solar orientation), IP Integrative Process (massing & orientation)
+- Green Mark: Design for Tropics considerations
+- DGNB: SITE1.1 Urban design quality
+- Estidama: Natural Systems (site analysis)
 
 ---
 
-## Output Format
+## Summary: Extended Extraction Matrix
 
-### gbrs_extraction_extended.csv columns
-
-| Column | Description |
-|--------|-------------|
-| GBRS | System name |
-| Version | Manual version |
-| Dimension | One of D-ENV, D-DAY, D-LCA, D-EV, D-CARBON, D-SITE |
-| Credit_ID | Credit or section identifier |
-| Credit_Name | Full credit name |
-| Category | Category within the system |
-| PV_Relevance | Direct / Enabling / Conflicting / Neutral |
-| Verbatim_Text | Exact quote from manual (max 300 chars) |
-| Page_Ref | Page number(s) |
-| Implication | Analysis note for Discussion section |
-| Data_Quality | verified / partial / inferred |
-
-### Priority systems for deep scan
-Focus effort on systems most likely to have rich indirect references:
-1. **DGNB** — LCA methodology covers PV as building component
-2. **BREEAM** — extensive envelope, daylighting, and materials credits
-3. **LEED** — Materials & Resources, Indoor Environmental Quality
-4. **Green Mark** — ETTV/RETV envelope formula; EV credits; integrated design
-5. **LBC** — Materials Petal, Place Petal (solar access)
-6. **Passive House** — PHPP integrates PV with envelope; cool colour criterion
-7. **Green Star** — Design & As Built has strong materials and IEQ sections
-8. **BEAM Plus** — Hong Kong high-rise context; EV, daylight, and materials credits
+| Dimension | Current coverage | Gap |
+|-----------|-----------------|-----|
+| A: Direct RE generation | ✅ Fully covered | - |
+| B: Envelope thermal | ⚠️ Partially (D7 Synergy) | Need specific credit-level extraction |
+| C: Daylighting/visual | ❌ Not covered | New dimension to add |
+| D: Materials/LCA | ⚠️ Partially | Need BIPV-specific LCA treatment |
+| E: Roofing/durability | ❌ Not covered | Minor — only relevant for BIPV roof |
+| F: EV/storage synergy | ❌ Not covered | Emerging trend, worth capturing |
+| G: Carbon accounting | ⚠️ Partially (D5 Ambition) | Need PV-specific carbon accounting |
+| H: Urban context | ❌ Not covered | Links to your urban morphology figure |
 
 ---
 
-*Created: April 2026 — for use in Round 2 manual scan*
+## Action: Second-pass extraction from manuals
+
+For each of the 21 GBRS, do a focused search for:
+1. "envelope" + "PV" or "photovoltaic" or "solar"
+2. "daylight" + "shading" + "solar"
+3. "life cycle" OR "LCA" OR "embodied" + "PV" or "renewable"
+4. "electric vehicle" OR "EV" OR "storage" OR "battery"
+5. "carbon" + "renewable" OR "PV" OR "solar"
+6. "orientation" OR "massing" OR "solar potential" OR "feasibility"
+7. "SHGC" OR "VLT" OR "U-value" + "PV" or "solar"

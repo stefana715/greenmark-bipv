@@ -24,5 +24,3 @@ data/raw/*.bib
 # Temp
 *.tmp
 *.log
-*.tar
-*.tar.gz
